@@ -228,6 +228,10 @@ textarea{
     border: none;
     border-radius: 0.5rem;
 }
+#submit:active{
+    background: #fefefe;
+    color: #444;
+}
 .about,.skill,.event{
     margin-top: 20px;
     padding-top: 30px;
