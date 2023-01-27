@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello || Contact page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+<body>
+    <div id="main">
+        <header>
+            <div class="brand">
+                <h1>Hello<span class="mark">.</span></h1>
+            </div>
+            <div id="menu">
+                <div class="toggle">&#9776;</div>
+                <div class="menu">
+                    <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <li>
+                        <a href="index.html">About me</a>
+                    </li>
+                        <li>
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="active" href="contact.html">Contact me</a>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+            </div>
+        </header>
+        <section id="container">
+            <div class="area">
+                <h2 style="text-align: center;">POKE <span class="mark">ME!</span></h2>
+                <p style="text-align: center;">Kindly fill out the form below to reach me through email or simply tap the WhatsApp icon at the bottom right corner of the window to send a direct message to me:</p>
+                <div class="form">
+                    <form action="https://formsubmit.co/giftjacksun@gmail.com" method="POST">
+                        <div class="input">
+                            <input type="text" name="name" id="name" valid required>
+                            <label for="name" id="label">Full name</label>
+                        </div>
+                        <div class="input">
+                            <input type="email" name="Email" id="email" valid required>
+                            <label for="email" id="label">E-mail address</label>
+                        </div>
+                        
+                        <textarea placeholder="Your message..." id="reason" name="reason" required></textarea>
+                        <button type="submit" id="submit">SEND NOW!</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div class="social-links">
+                <a class="fb" href=" https://www.facebook.com/profile.php?id=100067110364415&mibextid=ZbWKwL">
+                    <i class="fab fa-facebook"></i></a>
+                <a class="wa" href="#">
+                    <i class="fab fa-whatsapp"></i></a>
+                   <a class="tw" href=" https://twitter.com/Gift_Jacksun?t=dMd1gKl78mxYNhrDSkV-6w&s=09">
+                    <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="gh" href="#">
+                    <i class="fab fa-github"></i></a>
+                                </div>
+    </div>
+    <footer>
+            <p>GIF-TECH HUB &copy; 2023</p>
+        </footer>
+        <script src="app.js" type="text/javascript" charset="utf-8"></script>
+        
+        <script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "+2348137411338", // WhatsApp number
+            call_to_action: "Send a direct message to me", // Call to action
+            position: "right", // Position may be 'right' or 'left'
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+
+</body>
+</html>
