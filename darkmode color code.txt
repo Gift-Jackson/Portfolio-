@@ -1,0 +1,3 @@
+dark-1: 0b132b
+dark-2: 1c2541
+dark-2: 3a506b

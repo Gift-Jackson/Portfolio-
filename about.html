@@ -23,9 +23,8 @@
 </head>
 
 <body>
-
     <!-- TRANSITION EFFECT -->
-    <div class="transition transition-1 is-active">
+    <div class="transition transition-2 is-active">
         <div class="content">
             <h1 class="fill-text load-text">one eternity <br> later</h1>
         </div>
@@ -53,7 +52,7 @@
                 </a>
             </li>
             <li>
-                <a id="about" href="about.html">
+                <a id="about" class="current" href="about.html">
                     <div class="link-container">
                         <span class="material-symbols-outlined">account_circle</span>
                         <span class="link-text">About</span>
@@ -77,7 +76,7 @@
                 </a>
             </li>
             <li>
-                <a id="contact" class="current" href="contact.html">
+                <a id="contact" href="contact.html">
                     <div class="link-container">
                         <span class="material-symbols-outlined">phone_in_talk</span>
                         <span class="link-text">Contacts</span>
@@ -89,40 +88,62 @@
 
     <!-- Web content -->
     <div class="main-container">
-        <section class="contact-section">
-            <div class="contact-content">
-                <h1>Reach <span class="fill-text">Me</span></h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti.</p>
-                
-                <div class="contact-container">
-                    <form action="">
-                        <div class="input-control">
-                            <input type="text" name="name" id="name" placeholder="Full Name" required>
-                        </div>
-                        <div class="input-control">
-                            <input type="email" name="email" id="email" placeholder="E-mail Address" required>
-                        </div>
-                        <div class="input-control">
-                            <select name="service" id="service">
-                                <option value="" disabled selected hidden>Select Role</option>
-                                <option value="frontend_web_developer">Frontend Website Developer</option>
-                                <option value="UI_design">UI Design</option>
-                                <option value="Collaboration">Collaboration</option>
-                            </select>
-                        </div>
-                        <div class="input-control">
-                            <textarea name="message" id="message" rows="8" placeholder="Description" required></textarea>
-                        </div>
-                        <button type="submit" name="submit" class="btn btn-1 btn-6">Submit</button>
-                    </form>
+        <section class="about-section">
+            <div class="about-content">
+                <h1>About <span class="fill-text">Me</span></h1>
+
+                <div class="wrapper">
+                    <div class="wrap">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam deleniti labore, eligendi
+                            distinctio harum nesciunt odio non animi ducimus necessitatibus similique debitis et rerum
+                            dolorum?
+                        </p>
+                        <a href="#">
+                            <button class="btn btn-3">
+                                <span>download cv</span>
+                                <span class="material-symbols-outlined">download</span>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="wrap">
+                        <img src="images/my_pic.png" alt="my_pic">
+                    </div>
                 </div>
 
-                <!-- SOCIAL LINKS -->
-                <div class="social-links">
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                <div class="boxes">
+                    <div class="box">
+                        <span>
+                            <h1 class="fill-text">21+</h1>
+                        </span>
+                        <span>
+                            <h2>projects <br> completed</h2>
+                        </span>
+                    </div>
+                    <div class="box">
+                        <span>
+                            <h1 class="fill-text">1+</h1>
+                        </span>
+                        <span>
+                            <h2>years of <br> experience</h2>
+                        </span>
+                    </div>
+                    <div class="box">
+                        <span>
+                            <h1 class="fill-text">5+</h1>
+                        </span>
+                        <span>
+                            <h2>Happy <br> clients</h2>
+                        </span>
+                    </div>
+                    <div class="box">
+                        <span>
+                            <h1 class="fill-text">9</h1>
+                        </span>
+                        <span>
+                            <h2>customer <br> reviews</h2>
+                        </span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -153,10 +174,10 @@
 
 
     <!-- <div class="social-links fixed">
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a><br>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a><br>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a><br>
+        <a href="#"><i class="fa-brands fa-github"></i></a><br>
     </div> -->
 
 
@@ -164,8 +185,6 @@
 
 
     <!-- JAVASCRIPT -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/0.0.2/barba.min.js"></script>
-
     <script src="index.js"></script>
     <script src="nav.js"></script>
     <script>
