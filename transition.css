@@ -70,3 +70,19 @@
 .transition-3.is-active{
     right: 0;
 }
+
+.transition-4{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: -100%;
+    right: 0;
+    height: 100%;
+    background-color: var(--primary-color);
+    z-index: 99;
+    transition: .5s ease-in-out;
+}
+
+.transition-4.is-active{
+    bottom: 0;
+}
