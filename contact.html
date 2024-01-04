@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <!-- css -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="transition.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/transition.css">
     <!-- MATERIAL ICON -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <!-- AOS -->
@@ -26,21 +26,23 @@
 
     <!-- TRANSITION EFFECT -->
     <div class="transition transition-2 is-active">
-        <div class="content">
+        <!-- <div class="content">
             <h1 class="fill-text load-text">one eternity <br> later</h1>
+        </div> -->
+    </div>
+
+    <header>
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="images/logo.svg" alt="My_logo">
         </div>
-    </div>
 
-    <!-- LOGO -->
-    <div class="logo">
-        <img src="images/logo.svg" alt="My_logo">
-    </div>
-
-    <!-- THEME -->
-    <div class="theme-toggler">
-        <span class="material-symbols-outlined" id="dark-mode">dark_mode</span>
-        <span class="material-symbols-outlined" id="light-mode">light_mode</span>
-    </div>
+        <!-- THEME -->
+        <div class="theme-toggler">
+            <span class="material-symbols-outlined" id="dark-mode">dark_mode</span>
+            <span class="material-symbols-outlined" id="light-mode">light_mode</span>
+        </div>
+    </header>
     <!-- Navigator links -->
     <div class="navbar">
         <ul>
@@ -93,7 +95,7 @@
             <div class="contact-content">
                 <h1>Reach <span class="fill-text">Me</span></h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti.</p>
-                
+
                 <div class="contact-container">
                     <form action="">
                         <div class="input-control">
@@ -111,7 +113,8 @@
                             </select>
                         </div>
                         <div class="input-control">
-                            <textarea name="message" id="message" rows="8" placeholder="Description" required></textarea>
+                            <textarea name="message" id="message" rows="8" placeholder="Description"
+                                required></textarea>
                         </div>
                         <button type="submit" name="submit" class="btn btn-1 btn-6">Submit</button>
                     </form>
@@ -164,10 +167,11 @@
 
 
     <!-- JAVASCRIPT -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/0.0.2/barba.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/0.0.2/barba.min.js"></script>
 
-    <script src="index.js"></script>
-    <script src="nav.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/counter.js"></script>
     <!-- <script src="router.js"></script> -->
 
     <script>

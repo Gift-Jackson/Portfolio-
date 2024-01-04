@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <!-- css -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="transition.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/transition.css">
     <!-- MATERIAL ICON -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <!-- AOS -->
@@ -25,21 +25,23 @@
 <body>
     <!-- TRANSITION EFFECT -->
     <div class="transition transition-2 is-active">
-        <div class="content">
+        <!-- <div class="content">
             <h1 class="fill-text load-text">one eternity <br> later</h1>
+        </div> -->
+    </div>
+
+    <header>
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="images/logo.svg" alt="My_logo">
         </div>
-    </div>
 
-    <!-- LOGO -->
-    <div class="logo">
-        <img src="images/logo.svg" alt="My_logo">
-    </div>
-
-    <!-- THEME -->
-    <div class="theme-toggler">
-        <span class="material-symbols-outlined" id="dark-mode">dark_mode</span>
-        <span class="material-symbols-outlined" id="light-mode">light_mode</span>
-    </div>
+        <!-- THEME -->
+        <div class="theme-toggler">
+            <span class="material-symbols-outlined" id="dark-mode">dark_mode</span>
+            <span class="material-symbols-outlined" id="light-mode">light_mode</span>
+        </div>
+    </header>
     <!-- Navigator links -->
     <div class="navbar">
         <ul>
@@ -91,29 +93,89 @@
         <section class="about-section">
             <div class="about-content">
                 <h1>About <span class="fill-text">Me</span></h1>
-                <div class="wrapper">
-                    <div class="wrap">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam deleniti labore, eligendi
-                            distinctio harum nesciunt odio non animi ducimus necessitatibus similique debitis et rerum
-                            dolorum?
-                        </p>
-                        <a href="#">
-                            <button class="btn btn-3">
-                                <span>download cv</span>
-                                <span class="material-symbols-outlined">download</span>
-                            </button>
-                        </a>
+                <div class="img-container" data-aos="zoom-in" data-aos-delay="2000">
+                    <img src="images/me.png" alt="Profilepic">
+                </div>
+                    <div class="grid-container">
+                        <div class="grid-items" data-aos="fade-right" data-aos-delay="300">
+                            <!-- <h3 class="fill-text">About</h3> -->
+                            <p>
+                                Hello there! 👋 I'm <span class="fill-text">Gift Jackson</span>, a passionate frontend
+                                developer with a keen eye for detail and a love for crafting engaging user experiences.
+                                My journey into the world of web development began with a curiosity about how things
+                                work in the digital realm, and it has evolved into a fulfilling career that allows me to
+                                bring ideas to life on the web.
+                            </p>
+                        </div>
+                        <div class="grid-items" data-aos="fade-left" data-aos-delay="300">
+                            <h3 class="fill-text">🚀 What I Do</h3>
+                            <p>
+                                I specialize in creating responsive, intuitive, and visually appealing websites that not
+                                only meet but exceed the expectations of users. From pixel-perfect designs to seamless
+                                interactions, I strive to make the online experience enjoyable and memorable.
+                            </p>
+                        </div>
+                        <div class="grid-items" data-aos="fade-right" data-aos-delay="300">
+                            <h3 class="fill-text">💻 Tech Stack</h3>
+                            <p>
+                                My toolkit includes a variety of technologies and tools. I'm proficient in HTML, CSS,
+                                and JavaScript, and I have hands-on experience with popular frontend libraries and
+                                frameworks such as React.js. I stay up-to-date with the latest industry trends and best
+                                practices to ensure that my work is always on the cutting edge.
+                            </p>
+                        </div>
+                        <div class="grid-items" data-aos="fade-left" data-aos-delay="300">
+                            <h3 class="fill-text">🎨 Design Aesthetics</h3>
+                            <p>
+                                I believe that great design is not just about aesthetics but also about usability. I
+                                have a strong appreciation for clean and minimalistic design, coupled with a
+                                user-centric approach. Whether it's a personal project or a client's vision, I always
+                                strive to create visually appealing interfaces that enhance the overall user experience.
+                            </p>
+                        </div>
+                        <div class="grid-items" data-aos="fade-right" data-aos-delay="300">
+                            <h3 class="fill-text">🛠️ Problem Solver</h3>
+                            <p>
+                                One of the aspects I enjoy most about frontend development is problem-solving. I love
+                                tackling challenges and finding elegant solutions to complex issues. Every project is an
+                                opportunity for me to expand my skill set and deliver innovative solutions that make a
+                                positive impact.
+                            </p>
+                        </div>
+                        <div class="grid-items" data-aos="fade-left" data-aos-delay="300">
+                            <h3 class="fill-text">🌐 Continuous Learning</h3>
+                            <p>
+                                The ever-evolving nature of web development keeps me excited about learning new things.
+                                Whether it's exploring the latest frontend frameworks, experimenting with design trends,
+                                or diving into emerging technologies, I am committed to continuous learning to stay at
+                                the forefront of the industry.
+                            </p>
+                        </div>
+                        <div class="grid-items" data-aos="fade-right" data-aos-delay="300">
+                            <h3 class="fill-text">🌟 Let's Collaborate</h3>
+                            <p>
+                                I'm always open to new opportunities and collaborations. Whether you're looking for a
+                                dedicated frontend developer for your project or interested in discussing ideas, feel
+                                free to reach out. Let's work together to create something extraordinary!
+                                <br><br>
+                                Thanks for stopping by, and I look forward to connecting with you.
+                            </p>
+                        </div>
+                        
                     </div>
-                    <div class="wrap">
-                        <img src="images/my_pic.png" alt="my_pic">
-                    </div>
+                    <a href="#">
+                        <button class="btn btn-3">
+                            <span>download cv</span>
+                            <span class="material-symbols-outlined">download</span>
+                        </button>
+                    </a>
                 </div>
 
                 <div class="boxes">
                     <div class="box">
                         <div>
-                            <h1 class="number"><span class="num fill-text" data-value="35">00</span><span class="fill-text">+</span></h1>
+                            <h1 class="number"><span class="num fill-text" data-value="35">00</span><span
+                                    class="fill-text">+</span></h1>
                         </div>
                         <div>
                             <h2>projects <br> completed</h2>
@@ -121,7 +183,8 @@
                     </div>
                     <div class="box">
                         <div>
-                            <h1 class="number" data-value="6"><span class="num fill-text" data-value="2">00</span><span class="fill-text">+</span></h1>
+                            <h1 class="number" data-value="6"><span class="num fill-text" data-value="2">00</span><span
+                                    class="fill-text">+</span></h1>
                         </div>
                         <div>
                             <h2>years of <br> experience</h2>
@@ -129,7 +192,8 @@
                     </div>
                     <div class="box">
                         <div>
-                            <h1 class="number"><span class="num fill-text" data-value="12">00</span><span class="fill-text">+</span></h1>
+                            <h1 class="number"><span class="num fill-text" data-value="12">00</span><span
+                                    class="fill-text">+</span></h1>
                         </div>
                         <div>
                             <h2>Happy <br> clients</h2>
@@ -184,9 +248,10 @@
 
 
     <!-- JAVASCRIPT -->
-    <script src="index.js"></script>
-    <script src="nav.js"></script>
-    <script src="counter.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="router.js"></script>
     <!-- <script src="router.js"></script> -->
 
     <script>

@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <!-- css -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="transition.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/transition.css">
     <!-- MATERIAL ICON -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <!-- AOS -->
@@ -25,21 +25,23 @@
 <body>
     <!-- TRANSITION EFFECT -->
     <div class="transition transition-1 is-active">
-        <div class="content">
+        <!-- <div class="content">
             <h1 class="fill-text load-text">one eternity <br> later</h1>
+        </div> -->
+    </div>
+
+    <header>
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="images/logo.svg" alt="My_logo">
         </div>
-    </div>
 
-    <!-- LOGO -->
-    <div class="logo">
-        <img src="images/logo.svg" alt="My_logo">
-    </div>
-
-    <!-- THEME -->
-    <div class="theme-toggler">
-        <span class="material-symbols-outlined" id="dark-mode">dark_mode</span>
-        <span class="material-symbols-outlined" id="light-mode">light_mode</span>
-    </div>
+        <!-- THEME -->
+        <div class="theme-toggler">
+            <span class="material-symbols-outlined" id="dark-mode">dark_mode</span>
+            <span class="material-symbols-outlined" id="light-mode">light_mode</span>
+        </div>
+    </header>
     <!-- Navigator links -->
     <div class="navbar">
         <ul>
@@ -210,8 +212,9 @@
 
 
     <!-- JAVASCRIPT -->
-    <script src="index.js"></script>
-    <script src="nav.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/counter.js"></script>
     <!-- <script src="router.js"></script> -->
     <script>
         var typed = new Typed('#typed-text', {
